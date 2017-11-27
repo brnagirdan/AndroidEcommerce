@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_contact"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_contact"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <include
+            layout="@layout/app_bar_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerHorizontal="true">
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Adınız"
+                    android:id="@+id/name_et"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:maxLength="40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="Geçersiz e-posta adresi"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="-7dp"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/red"
+                    android:layout_above="@+id/mail_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/warning" />
+
+                <EditText
+                    android:ems="10"
+                    android:hint="E-posta Adresiniz"
+                    android:id="@+id/mail_et"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:maxLength="40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:ems="10"
+                    android:layout_marginTop="20dp"
+                    android:hint="Mesajınız"
+                    android:id="@+id/msg_et"
+                    android:maxLength="350"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/sepet_buttoncorner"
+                android:text="MESAJ GÖNDER" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/call_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:paddingLeft="100dip"
+                android:paddingRight="100dip"
+                android:background="@drawable/call_drawable"
+                android:drawableLeft="@mipmap/call"
+                android:text="BİZİ ARAYIN" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_contact"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_contact"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <include
+                layout="@layout/app_bar_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar_contact"
+        android:orientation="vertical"
+        android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/msg_layout"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Adınız"
+            android:id="@+id/name_et"
+            android:lines="1"
+            android:maxLines="1"
+            android:maxLength="40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="Geçersiz e-posta adresi"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-7dp"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/red"
+            android:layout_above="@+id/mail_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/warning" />
+
+        <EditText
+            android:ems="10"
+            android:hint="E-posta Adresiniz"
+            android:id="@+id/mail_et"
+            android:lines="1"
+            android:maxLines="1"
+            android:maxLength="40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:hint="Mesajınız"
+            android:id="@+id/msg_et"
+            android:maxLength="350"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dip"
+            android:textColor="@color/white"
+            android:background="@drawable/sepet_buttoncorner"
+            android:text="MESAJ GÖNDER" />
+    </LinearLayout>
+
+        <Button
+           android:id="@+id/call_btn"
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:textColor="@color/white"
+           android:layout_marginTop="140dp"
+           android:layout_marginBottom="20dp"
+           android:layout_below="@id/msg_layout"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_gravity="center"
+           android:paddingLeft="100dip"
+           android:paddingRight="100dip"
+           android:background="@drawable/call_drawable"
+           android:drawableLeft="@mipmap/call"
+           android:text="BİZİ ARAYIN" />
+       </LinearLayout>
+    </ScrollView>
+</RelativeLayout> -->

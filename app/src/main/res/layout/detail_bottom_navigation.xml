@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/fiyatextra_txt"
+                android:text=",00 TL"
+                android:layout_toRightOf="@+id/fiyat_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textColor="#8E8D8D"
+                android:textSize="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="-10dp"
+                />
+            <TextView
+                android:id="@+id/fiyatKdv_txt"
+                android:text="+KDV"
+                android:layout_toRightOf="@+id/fiyat_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textColor="#8E8D8D"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="22dp"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="25dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#3E3E3E"
+                android:id="@+id/fiyat_txt" />
+
+            <Button
+                android:text="Sepete Ekle"
+                android:layout_height="wrap_content"
+                android:layout_width="170dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/background_light"
+                android:textColorLink="@color/colorPrimary"
+                android:background="@drawable/sepet_buttoncorner"
+                android:id="@+id/sepet_btn"
+
+                />
+        </RelativeLayout>
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>

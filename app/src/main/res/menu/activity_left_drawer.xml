@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cicek"
+            android:title="Çiçek"
+
+            />
+        <item
+            android:id="@+id/nav_amac"
+            android:title="Gönderim Amacı" />
+
+        <item
+            android:id="@+id/nav_lezzetcicekleri"
+            android:title="Lezzet Çiçekleri"    />
+
+
+        <item
+            android:id="@+id/nav_fiyatagore"
+            android:title="Fiyatlarına Göre Çiçekler"
+            />
+    </group>
+
+    <item android:title="İLETİŞİM" android:id="@+id/nav_group2">
+        <menu >
+            <item
+                android:id="@+id/nav_iletisim"
+                android:title="Bize Ulaşın" />
+            <item
+                android:id="@+id/nav_paylas"
+                android:title="Uygulamayı Paylaş" />
+            <item
+                android:id="@+id/nav_oyla"
+                android:title="Uygulamayı Oyla" />
+
+        </menu>
+    </item>
+</menu>
+

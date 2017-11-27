@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_cover_height"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thumbnail"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+          <!--  <TextView
+                android:id="@+id/kod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/product_title_padding"
+                android:paddingRight="@dimen/product_title_padding"
+                android:paddingTop="@dimen/product_title_padding"
+                android:orientation="horizontal"
+                android:textColor="@color/product_title"
+                android:textSize="@dimen/product_title" /> -->
+            <TextView
+                android:id="@+id/fiyat"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:orientation="horizontal"
+                android:textColor="#222222"
+                android:paddingBottom="@dimen/product_code_padding_bottom"
+                android:textSize="@dimen/product_price" />
+
+            <TextView
+                android:text=",00 TL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-4dp"
+                android:textSize="8dp"
+                android:textColor="#313131"
+                android:layout_above="@+id/fiyatKdv_txt"
+                android:layout_toRightOf="@+id/fiyat"
+                android:id="@+id/fiyatextra_txt" />
+
+            <TextView
+                android:text="+ KDV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:textSize="8dp"
+                android:textColor="#313131"
+                android:layout_alignBottom="@+id/fiyat"
+                android:layout_toRightOf="@+id/fiyat"
+                android:id="@+id/fiyatKdv_txt" />
+        </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

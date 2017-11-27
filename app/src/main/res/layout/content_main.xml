@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="55dp"
+    android:layout_marginLeft="-30dp"
+    android:layout_marginRight="-30dp"
+    tools:showIn="@layout/app_bar_main">
+   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:fillViewport="false">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:id="@+id/ara_layout"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/ara"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Ne aramıştınız?"
+          android:gravity="center_vertical"
+          android:layout_weight="0.2"
+          android:background="@color/white"
+          android:paddingLeft="10dp"
+          android:layout_marginTop="4dp"
+          android:layout_marginBottom="1dp"
+          android:layout_marginLeft="10dp"
+
+          />
+           <ImageButton
+               android:id="@+id/green_ara"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center_vertical"
+               android:layout_weight="1"
+               android:paddingLeft="10dp"
+               android:src="@mipmap/buyutec_48"
+               android:background="#0DB706"
+               android:layout_marginTop="4dp"
+               android:layout_marginRight="10dp"
+               />
+       </LinearLayout>
+   <android.support.v7.widget.RecyclerView
+       android:layout_below="@+id/ara_layout"
+       android:id="@+id/recycler_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginRight="0dp"
+       android:layout_marginLeft="0dp">
+   </android.support.v7.widget.RecyclerView>
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recycler_pic_purpose"
+          android:layout_below="@+id/recycler_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="3dp">
+      </android.support.v7.widget.RecyclerView>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:id="@+id/layout2"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/recycler_pic_purpose">
+
+      <TextView
+          android:textColor="#403F3F"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/coksatilanlar_txt"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="0dp"
+          android:textSize="15dp"
+          android:layout_centerHorizontal="true"/>
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recycler_coksatilanlar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/coksatilanlar_txt"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="0dp">
+      </android.support.v7.widget.RecyclerView>
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recycler_pic2"
+          android:layout_below="@+id/recycler_coksatilanlar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="0dp"
+          android:layout_marginLeft="0dp">
+      </android.support.v7.widget.RecyclerView>
+
+   </RelativeLayout>
+   </RelativeLayout>
+   </ScrollView>
+
+   <com.facebook.login.widget.LoginButton
+       android:id="@+id/flogin_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:layout_marginLeft="50dp"
+       android:layout_marginStart="50dp"
+       android:layout_marginTop="194dp"
+       android:visibility="invisible"/>
+</RelativeLayout>
+

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_cartitem"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textColor="#393838"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_toRightOf="@+id/productImage"
+        android:layout_marginTop="20dip"
+        />
+
+    <TextView
+        android:id="@+id/quantitytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="@dimen/item_space"
+        android:textSize="16sp"
+        android:text="Ürün Adedi:"
+        android:textColor="#393838"
+        android:layout_below="@+id/productName"
+        android:layout_toEndOf="@+id/productImage"
+        android:layout_toRightOf="@+id/productImage" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/quantitytext"
+        android:layout_below="@+id/productName"
+        android:id="@+id/quantity"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/decrement_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:textSize="16sp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/increment_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:textSize="16sp"
+            android:text="+" />
+    </LinearLayout>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantity"
+        android:layout_toEndOf="@+id/productImage"
+        android:layout_marginTop="@dimen/item_space"
+        android:layout_toRightOf="@+id/productImage"
+        android:layout_marginBottom="20dp">
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_weight="700"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/price"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#393838"
+               android:textAppearance="?android:textAppearanceLarge"
+               android:textSize="16sp"
+               />
+
+           <TextView
+               android:id="@+id/kdv"
+               android:text="+ KDV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:textColor="#8E8D8D"
+               android:layout_marginLeft="3dp"
+               android:textSize="16dp"
+               android:layout_alignBottom="@+id/price"
+               android:layout_toRightOf="@+id/price"
+               android:layout_toEndOf="@+id/price"
+               android:layout_marginStart="10dp" />
+       </RelativeLayout>
+        <ImageButton
+            android:id="@+id/trash"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/trash"
+            />
+    </TableRow>
+
+</RelativeLayout>
+
+
+ <!--   <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#393838"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="@dimen/item_space"
+        android:textSize="16sp"
+        android:layout_below="@+id/quantity"
+        android:layout_toEndOf="@+id/productImage"
+        android:layout_toRightOf="@+id/productImage" />
+
+    <TextView
+        android:id="@+id/kdv"
+        android:text="+ KDV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textColor="#8E8D8D"
+        android:layout_marginLeft="3dp"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/price"
+        android:layout_toRightOf="@+id/price"
+        android:layout_toEndOf="@+id/price"
+        android:layout_marginStart="10dp" />
+
+    <ImageButton
+        android:id="@+id/trash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/trash"
+        />
+
+ -->

@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    <group android:checkableBehavior="single">
+          <item
+               android:id="@+id/uye_girisi"
+               android:title="Üye Girişi"
+               android:icon="@mipmap/user"/>
+
+           <item
+               android:id="@+id/fb_giris"
+               android:title="Facebook İle Giriş"
+               android:icon="@mipmap/facebook"/>
+           <item
+               android:id="@+id/adres_defterim"
+               android:title="Adres Defterim"
+               android:icon="@mipmap/map"/>
+           <item
+               android:id="@+id/favorilerim"
+               android:title="Favorilerim"
+               android:icon="@mipmap/star"/>
+
+       </group>
+
+     -->
+
+</menu>

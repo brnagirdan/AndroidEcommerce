@@ -1,0 +1,42 @@
+<RelativeLayout android:layout_height="56dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <ImageButton
+                android:id="@+id/geri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/back"
+                />
+
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/geri"
+                android:layout_centerVertical="true"
+                android:hint="Çiçek, çikolata, hediye.."
+                android:textColorHint="#8E8D8D"
+                android:background="@android:color/transparent"
+                android:id="@+id/searchtext"
+                android:textColor="@color/product_title"
+                android:textSize="17dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:maxLength="30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>
